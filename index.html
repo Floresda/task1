@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h2 id="task1"></h2>
+    <h2 id="part2"></h2>
+    <script>
+// Use the prompt call to get input as a string
+let number = prompt("Please enter a number");
+let percent = prompt("Please enter a percentage");
+
+// Find the reference to the div with id of task1
+let refToTask1 = document.querySelector("#task1");
+let refToPart2 = document.querySelector("#part2");
+// Set the innerHTML property
+const percentage = ((number*percent)/100);
+
+refToTask1.innerHTML = `The number you entered is ${number}`;
+refToPart2.innerHTML = `${percent}% of Quantity, ${number}, is ${percentage}`;
+    </script>
+
+</body>
+</html>
